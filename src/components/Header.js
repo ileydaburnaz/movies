@@ -15,16 +15,22 @@ function Header() {
             </div>
             <ul>
               <li>
-                <Link to='/tv'>Diziler</Link>
+                <Link to='/besttv'>En İyi Diziler</Link>
               </li>
               <li>
-                <Link to='/movie'>Filmler</Link>
+                <Link to='/bestmovie'>En İyi Filmler</Link>
               </li>
               <li>
-                <Link to='/besttv'>En Çok İzlenen Diziler</Link>
+                <Link to='/populartv'>En Çok İzlenen Diziler</Link>
               </li>
               <li>
-                <Link to='/bestmovie'>En Çok İzlenen Filmler</Link>
+                <Link to='/popularmovie'>En Çok İzlenen Filmler</Link>
+              </li>
+              <li>
+                <Link to='/'>Giriş Yap</Link>
+              </li>
+              <li>
+                <Link to='/'>Üye Ol</Link>
               </li>
             </ul>
           </div>

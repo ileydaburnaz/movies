@@ -48,6 +48,9 @@ input {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+.container li:hover {
+  opacity: 0.9;
+}
 .brand {
   font-size: 2rem;
   border: none;
@@ -95,19 +98,25 @@ input {
 .bestmovie-list,
 .besttv-list,
 .watchlist-list,
-.watched-list {
+.watched-list,
+.populartv-list,
+.popularmovie-list {
   background-color: #ffffec;
   margin: 45px;
 }
 .bestmovie-list li,
 .besttv-list li,
 .watchlist-list li,
-.watched-list li {
+.watched-list li,
+.populartv-list li,
+.popularmovie-list li {
   list-style-type: none;
 }
 
 .bestmovie-list ul,
-.besttv-list ul {
+.besttv-list ul,
+.populartv-list ul,
+.popularmovie-list ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +130,9 @@ input {
   flex-wrap: wrap;
 }
 .bestmovie-box,
-.besttv-box {
+.besttv-box,
+.populartv-box,
+.popularmovie-box {
   width: 300px;
   height: auto;
   margin: 30px 40px;
@@ -133,15 +144,13 @@ input {
   height: auto;
   margin: 20px 20px;
 }
-.bestmovie-pp,
-.besttv-pp,
+.cart-pp,
 .watchlist-pp,
 .watched-pp {
   visibility: hidden;
 }
 
-.bestmovie-image,
-.besttv-image {
+.cart-image {
   width: 300px;
   height: 460px;
   border-radius: 8px;
@@ -155,38 +164,34 @@ input {
   cursor: pointer;
 }
 
-.besttv-info,
-.bestmovie-info {
+.cart-info {
   color: #ffffec;
   background-color: #19313e;
   width: 300px;
   padding: 10px;
-  border-radius: 8px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
+  border-radius: 8px;
 }
 
-.besttv-button button:hover,
-.bestmovie-button button:hover,
+.cart-button button:hover,
 .watched-button button:hover,
 .watchlist-button button:hover {
   opacity: 0.8;
 }
 
-.besttv-button,
-.bestmovie-button {
+.cart-button {
   display: flex;
   margin-top: 5px;
 }
 
-.bestmovie-button button,
-.besttv-button button {
+.cart-button button {
   width: 50%;
   color: #ffffec;
   background-color: #19313e;
   border: none;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   padding: 15px;
 }
